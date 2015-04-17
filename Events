@@ -1,0 +1,14 @@
+
+CREATE TABLE `Events` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `heartrate` mediumint default NULL,
+  `respiration` mediumint default NULL,
+  `bloodpressure_l` mediumint default NULL,
+  `bloodpressure_h` mediumint default NULL,
+  `bloodoxygen` mediumint default NULL,
+  `bodytemp` mediumint default NULL,
+  `ambiancetemp` mediumint default NULL,
+  `humidity` mediumint default NULL,
+  `Time` varchar(255),
+  FOREIGN KEY (`id`) REFERENCES UserDetails(`id`)
+); 
