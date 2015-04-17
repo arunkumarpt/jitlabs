@@ -1,0 +1,20 @@
+CREATE TABLE `UserDetails` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `FirstName` varchar(255) default NULL,
+  `LastName` varchar(255) default NULL,
+  `Address` varchar(255) default NULL,
+  `Zip` varchar(10) default NULL,
+  `DOB` varchar(255),
+  `SSN` varchar(100) default NULL,
+  `Email` varchar(255) default NULL,
+  `Username` varchar(255) default NULL,
+  `Password` varchar(255) default NULL,
+  `Type` varchar(255) default NULL,
+  `DetailsToDoctor` varchar(255) default NULL,
+  `DoctorName` varchar(255) default NULL,
+  `DoctorEmail` varchar(255) default NULL,
+  `DetailsToFamily` varchar(255) default NULL,
+  `FamilyName` varchar(255) default NULL,
+  `FamilyEmail` varchar(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
